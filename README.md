@@ -1,0 +1,1 @@
+This is a project of an AI similar to Alexa and Siri. 
