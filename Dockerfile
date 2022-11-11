@@ -4,3 +4,5 @@ RUN pip install SpeechRecognition
 RUN apt-get install -y python3-pyaudio 
 RUN pip install PyAudio
 RUN pip install pywhatkit
+RUN git clone https://github.com/rpishenz4/project0.git 
+CMD cd project0; python3 main.py
