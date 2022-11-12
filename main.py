@@ -1,6 +1,9 @@
 import speech_recognition as sr 
 import pyaudio
-
+import os 
+import time 
+import playsound
+from gtts import gTTS
 
 def get_audio():
     recorder = sr.Recognizer()
@@ -14,4 +17,12 @@ def get_audio():
 
 
 
-get_audio()
+tmp = get_audio()
+
+def speak(text):
+    tts = gTTS(text = text, lang = "en")
+    filename = "voice.mp3"
+    tts.save(filename)
+    playsound.playsound(filename)
+
+speak(tmp)
