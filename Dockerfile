@@ -7,5 +7,7 @@ RUN pip install pywhatkit
 RUN pip install pygobject
 RUN pip install playsound
 RUN pip install gTTS
+RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib 
+#google calendar api
 RUN git clone https://github.com/rpishenz4/project0.git 
 CMD cd project0; python3 main.py
