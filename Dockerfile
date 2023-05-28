@@ -4,7 +4,8 @@ RUN pip install SpeechRecognition
 RUN apt install -y python3-pyaudio 
 RUN pip install PyAudio
 RUN pip install pywhatkit
-RUN pip install pygobject
+#RUN pip install pycairo
+#RUN pip install pygobject
 RUN pip install playsound
 RUN pip install gTTS
 RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib 
