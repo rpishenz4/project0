@@ -4,6 +4,9 @@ import os
 import time 
 import playsound
 from gtts import gTTS
+from datetime import datetime
+
+
 """
 def get_audio():
     recorder = sr.Recognizer()
@@ -25,5 +28,17 @@ def speak(text):
     tts.save(filename)
     playsound.playsound(filename)
 
-print("Hello World")
-speak("Hello World")
+
+
+def task(text):
+    speak(f"Searching for command: {text}")
+    if text == "time":
+        timenow = datetime.now()
+        curr_time = timenow.strftime("%H:%M:%S")
+        speak(curr_time)
+    else:
+        speak("No command found please try again")
+
+
+speak("Fuck you Tim")
+#task("time")
